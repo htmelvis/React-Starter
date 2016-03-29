@@ -16,13 +16,11 @@ const store = createStore(
     reducers,
     routing: routerReducer
   }, applyMiddleware(middleware))
-)
+);
 const history = syncHistoryWithStore(browserHistory, store);
-
-const createStoreWithMiddleware = applyMiddleware()(createStore);
 
 ReactDOM.render(
 <Provider store={store}>
   <Router history={history} routes={routes} />
-  </Provider>
+</Provider>
   , document.querySelector('.container'));
