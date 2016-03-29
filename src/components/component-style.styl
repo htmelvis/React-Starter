@@ -1,0 +1,100 @@
+@import '../app-style/_globals';
+.item__card {
+
+  +below($mobile) {
+    .flex-row {
+      .column, .column-1-3, .column-2-3, .image-column {
+        lost-column: 3 / 3 flex;
+        lost-utility: clearfix;
+      }
+      .image-column {
+        figure {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.overstock-item {
+  &.overstock-item_summary {
+    h2 {
+      font-size: 1.1em;
+      text-align: left;
+      width: 100%;
+    }
+    .item-table-wrap {
+      display: none;
+    }
+    .image-column {
+      float: left;
+    }
+    +below($mobile) {
+      .content {
+        .button__info {
+          display: block;
+          width: 100%;
+          padding: 1em;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  margin-bottom: 2em;
+  padding: 0;
+  &::after, &::before {
+    clear: both;
+  }
+  figure {
+    float: left;
+    width: 100%;
+    figcaption {
+      h4 {
+        width: 100%;
+        background: $brand-darker;
+        color: white;
+        text-align: center;
+        padding: 1em;
+      }
+    }
+  }
+}
+
+.item__summary {
+  .content {
+    h3 {
+      font-size: 1.1em;
+      margin-bottom: .2em;
+      font-weight: 700;
+    }
+    .item__summary-content {
+      line-height: 2em;
+      padding-bottom: 1em;
+      a {
+        line-height: 1.2em;
+      }
+    }
+    +below($mobile) {
+      padding: .7em;
+    }
+  }
+}
+
+.card-enter {
+  opacity: 0.01;
+}
+
+.card-enter.card-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.card-leave {
+  opacity: 1;
+}
+
+.card-leave.card-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}

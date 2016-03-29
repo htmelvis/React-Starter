@@ -1,0 +1,22 @@
+.filter-bar{
+  .toggle-nav{
+    display: none;
+  }
+  +below($tablet){
+
+  }
+  +below($mobile){
+    .toggle-nav{
+      display: block;
+      a,span{
+        display: block;
+        color: white;
+        padding: .8em;
+        font-size: 1.1em;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+      }
+    }
+  }
+}

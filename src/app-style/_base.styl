@@ -1,0 +1,70 @@
+//font-styles
+rupture.enable-em-breakpoints = true
+
+body{
+  font-size: responsive;
+  font-family: $font-family-base;
+  font-color: $subtle-black;
+  padding: 0;
+  margin: 0;
+}
+
+img{
+  max-width: 100%;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+
+//General Links
+a{
+  &:active{
+
+  }
+  &:focus{
+
+  }
+  &:link{
+
+  }
+  &:visited{
+
+  }
+  &:hover{
+
+  }
+}
+
+.filled{
+  background: $brand-darker;
+  color: white;
+  padding: .5em;
+  &--red{
+    background: $red;
+  }
+  &--green{
+    background: $green;
+  }
+  a{
+    color: white;
+  }
+}
+
+  //needs removed
+  .overstock-item_summary{
+    background: #e8e8e8;
+  }
+
+
+  //app notifications
+.info__error{
+  clear:both;
+  color: red;
+  font-size: .9em;
+  border: 1px solid $red;
+  padding: 1em;
+  border-radius: 2px;
+  font-size: .7em;
+  background: lighten($red, 60%);
+}
