@@ -10,7 +10,7 @@ You should see the site at ```127.0.0.1:8080``` and will have access to webpack 
 
 ###Project Structure
 
-.
+```
 +-- dist
 | +--index.html
 | +--img
@@ -25,3 +25,4 @@ You should see the site at ```127.0.0.1:8080``` and will have access to webpack 
 | +--index.js
 | +--routes.js
 | +--utils.js
+```
