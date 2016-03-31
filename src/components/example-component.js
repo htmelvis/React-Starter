@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-
+import { Link } from 'react-router';
 
 export default class ExampleComponent extends Component {
    constructor(props){
      super(props);
-      console.log(this.props.store)
      //bind methods to this in the constructor of each component for reuse
      this.updateStatus = this.updateStatus.bind(this);
      this.specialInit = this.specialInit.bind(this);
@@ -26,12 +24,17 @@ export default class ExampleComponent extends Component {
 
     return (
       <div>
-        <ReactCSSTransitionGroup transitionName="example" transitionEnterTimeout={300} transitionLeaveTimeout={300}>
-          <label>{state.reducers.status}</label>
-          <input ref={(c) => this._statusInput = c} onChange={this.updateStatus} />
-          <button onClick={this.props.initApp}>Run Action</button>
-          <button onClick={this.specialInit}>Initialize</button>
-        </ReactCSSTransitionGroup>
+        <h1>Header</h1>
+        <div className="navbar-default navbar">
+          <div className="container-fluid">
+            <ul className="nav navbar-nav">
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/about">About</Link></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
       </div>
     )
   }
