@@ -1,0 +1,40 @@
+@import '../app-style/_globals';
+.blog-container{
+  padding-top: 4.5em;
+
+  .blog-post{
+    article{
+      header{
+        padding: 1em 0;
+        h2{
+          margin-bottom: .5em;
+          line-height: 1.1em;
+          color: $subtle-black;
+          font-size: 2.2em;
+          & + p {
+            font-size: .9em;
+          }
+        }
+        date{
+          font-size: 1em;
+          color: $brand-primary;
+
+        }
+      }
+      footer{
+        padding: 1em 0;
+      }
+      .link-list{
+        li{
+          display: inline;
+          list-style: none;
+          a{
+            float:left;
+            display: block;
+            padding: 1em;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux';
-import ExampleComponent from '../components/example-component';
+import Header from '../components/layout/header.js';
 import { initApp, updateStatus } from '../actions/index';
 
 const mapStateToProps = (state) => {
@@ -17,6 +17,6 @@ function mapDispatchToProps(dispatch) {
     }, dispatch);
 }
 
-const ExampleContainer = connect(mapStateToProps, mapDispatchToProps)(ExampleComponent);
+const Blog = connect(mapStateToProps, mapDispatchToProps)(Header);
 
-export default ExampleContainer;
+export default Blog;

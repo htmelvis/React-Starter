@@ -5,7 +5,6 @@ export default class Footer extends Component {
   constructor(props){
     super(props);
     //bind methods to this in the constructor of each component for reuse
-
   }
 
   render() {
